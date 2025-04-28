@@ -3,9 +3,9 @@
 //  Leia um caractere qualquer (como um símbolo: @, #, %, &, etc.) e exiba ele entre colchetes. 
 
 int main (){
-    char c;
+    char caracter;
     printf("Digite um símbolo (@, #, %%, &, etc.) e exiba ele\n");
-    scanf("%s", &c);
-    printf("[%c]", &c);
+    scanf("%s", &caracter);
+    printf("[%s]\n", &caracter);
     return 0;
 }
