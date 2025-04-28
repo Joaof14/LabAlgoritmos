@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Crie um algoritmo que leia dois números inteiros e exiba a multiplicação entre eles. 
+
 int main (){
     int n1;
     printf("Vamos realizar a multiplicação de dois números inteiros!\nDigite o primeiro número\n");
