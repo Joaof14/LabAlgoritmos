@@ -10,15 +10,15 @@ int main() {
     printf("Programa para receber senha\n");
 
     //recebimento de valor para cada variável
-    printf("Digite um simbolo:");
+    printf("Digite um simbolo: ");
     scanf("%c", &simbolo);
-    printf("Digite um número:");
+    printf("Digite um número: ");
     scanf("%d", &numero);
-    printf("Digite uma letra:");
-    scanf("%c", &letra);
+    printf("Digite uma letra: ");
+    scanf(" %c", &letra);
 
     // Output final
-    printf("\nSua senha é: %c%d%c", simbolo, numero, letra);
+    printf("\nSua senha é: %c%d%c\n", simbolo, numero, letra);
     
 
 
