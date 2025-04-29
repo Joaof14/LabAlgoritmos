@@ -4,12 +4,18 @@
 
 
 int main(){
-    printf("Progrma para descobrir qual número inteiro é maior\n");
+
+    //Declaração de variáveis
     int n1, n2;
+
+    // Recebimento de valor nas variáveis
+    printf("Progrma para descobrir qual número inteiro é maior\n");
     printf("Digite o primeiro número\n");
     scanf("%d", &n1);
-    printf("Digite o Segundo número\n");
+    printf("Digite o segundo número\n");
     scanf("%d", &n2);
+
+    // Verificação se o número1 é maior/menor/igual ao número2.
 
     if (n1 > n2) {
         printf("%d é maior que %d", n1, n2);

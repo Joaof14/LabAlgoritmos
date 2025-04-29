@@ -3,7 +3,7 @@
 // Peça para o usuário digitar um símbolo especial, um número e uma letra. Exiba uma "senha" com essa combinação. 
 
 int main() {
-    // declarao de variáveis
+    // declaração de variáveis
     char letra, simbolo;
     int numero;
 
