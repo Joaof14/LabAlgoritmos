@@ -16,15 +16,14 @@ int main(){
     scanf("%d", &n2);
 
     // Verificação se o número1 é maior/menor/igual ao número2.
-
     if (n1 > n2) {
         printf("%d é maior que %d", n1, n2);
     }
     else if (n2 > n1) {
-        printf("%d é maior que que %d", n2, n1);
+        printf("%d é maior que que %d\n", n2, n1);
     }
      else{
-        printf("%d é igual a %d", n1, n2);
+        printf("%d é igual a %d\n", n1, n2);
      }
 
 

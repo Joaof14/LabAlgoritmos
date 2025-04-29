@@ -9,6 +9,6 @@ int main(){
     //receber nome e mostrar mensagem de boas vindas
     printf("Por favor digite seu nome\n");
     scanf("%s", nome);
-    printf("Seja bem vindo %s!", nome);
+    printf("Seja bem vindo %s!\n", nome);
     return 0;
 }

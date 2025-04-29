@@ -20,9 +20,9 @@ int main(){
 
     // Verifcação se o resultado da média aprova ou reprova o aluno
     if(media >= 7){
-        printf("O aluno foi aprovado");
+        printf("O aluno foi aprovado\n");
     }
     else{
-        printf("O aluno foi reprovado");
+        printf("O aluno foi reprovado\n");
     }
 }
