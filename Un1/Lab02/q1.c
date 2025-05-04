@@ -9,7 +9,7 @@ int main(){
     int n1, n2, n3;
     printf("Programa para calcular a média de um aluno e definir sua aprovação\n");
 
-    //Recebimento de valor das variáveis
+    //Recebimento de valor das variáveis com verificações
     printf("Digite a primeira nota e aperte enter\n");
     scanf("%d", &n1);
 

@@ -11,17 +11,20 @@ int main(){
     int tabuada = 1;
     while (tabuada == 1){
 
+        //recebimento do valor das variáveis
         printf("Digite um número n para calcular sua tabuada\n");
         scanf("%d", &n);
         printf("Digite um número m para definir até onde vai a tabuada\n");
         scanf("%d", &m);
 
+        //Construção das tabuadas
         for (int i = 0; i <=m; i++)
         {
             resultado = n * i;
             printf("%d x %d = %d\n", n, i, resultado);
         }
 
+        //Mensagem do final
         printf("Deseja realizar outra tabuada? Digite 1 para sim ou 0 para encerrar\n");
         scanf("%d", &tabuada);
     }
