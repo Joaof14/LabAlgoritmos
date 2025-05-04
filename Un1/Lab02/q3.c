@@ -5,6 +5,7 @@ primo. */
 
 int main(){
     int numero, primo = 1;
+    
     //Recebimento do valor
     printf("Digite um número para que possamos descobrir se ele é primo ou não\n");
     scanf("%d", &numero);
@@ -18,6 +19,8 @@ int main(){
             break;
         }
     }
+
+    //Mostrar resultados
     if (primo == 0){
         printf("O número %d não é primo\n", numero);
     }
