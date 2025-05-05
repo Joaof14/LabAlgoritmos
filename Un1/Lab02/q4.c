@@ -7,16 +7,20 @@ cada frase, informe o número de vogais presentes. */
 
 int main(){
     //Declarar variaveis
-    char frase[100];
-    int vogais;
+    char frase[100]; 
     char letra;
-    int loop = 1;
     
-    while (loop = 1) 
+    while (1) 
     {
+        int vogais = 0;
         //Recebe frase
         printf("Digite uma frase\n");
         fgets(frase, 100, stdin);
+
+        //Verificar se foi pedido o fim
+        if(strcmp(frase, "fim\n") == 0){
+            break;
+        }
 
         //Contar vogais
         for(int i= 0; i < strlen(frase); i ++)
@@ -27,13 +31,8 @@ int main(){
                 vogais++;
             }
         }
+
         printf("Número de Vogais: %d\n", vogais);
-
-        if(strcmp(frase, "fim") != 0){
-            break;
-        }
-
-
 
     }
     return 0;
