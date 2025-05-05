@@ -17,6 +17,7 @@ int main() {
         printf("Escolha a unidade que voce quer converter sua temperatura\n Digite 'Celsius' se quer converter de Fahrenheit para Celsius\n Digite 'Fahrenheit' para converter de Celsius para Fahrenheit \n Para sair do programa digite 'sair'\n");
         scanf("%s", converter);
 
+        //Verifica possivel saída
         if ( strcmp(converter, "sair") == 0 )
         {break;}
 
@@ -24,6 +25,7 @@ int main() {
         scanf("%d", &temperatura);
         
 
+        //Calcula a conversão
         if (strcmp(converter, "Celsius") == 0 )
         {
             temperatura = (temperatura - 32) * 5 / 9;
