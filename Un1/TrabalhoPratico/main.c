@@ -35,7 +35,7 @@ int main(){
 
     } while (1);
     if (n == 2){
-        printf("Não existe números primos abaixo do número 2\n");
+        printf("Não existe números primos menores que o número 2\n");
     }
     else{
         for (int i = 2; i < n; i++){
