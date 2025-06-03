@@ -1,1 +1,2 @@
+Esse lab equivale ao 02 e ao 04
 https://github.com/Joaof14/LabAlgoritmos/tree/main/Un1/Lab02
