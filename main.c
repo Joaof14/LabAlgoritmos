@@ -67,8 +67,28 @@ int verificaOrdem(int * vetor, int total){
     return 0;}
 }
 
-void subArrayMaiorSoma(){
+void subArrayMaiorSoma(int * vetor, int tamanhoTotal, int tamanhoSubarray){
+    //
+    int max = 0;
+    int index;
+    for (int i = 0; i < tamanhoTotal-tamanhoSubarray; i++)
+    {
+        int soma = 0;
+        for (int j = i; j < i+tamanhoSubarray; j++){
+            soma += vetor[j];
+        }
+        if (soma > max){
+            max = soma;
+            index = i;
+        }
+    }
 
+    printf("Índices do sub array: ");
+    for (int k = index; k < index + tamanhoSubarray; k++)
+    {
+        printf(" %d", k);
+    }
+    printf("; Maior soma: %d\n", max);
 }
 
 void moda(){
@@ -81,8 +101,8 @@ void mediana(){
 
 int main(){
 
-    //int vetor[7] = {3,5,6,9,7,5,8};
-    int vetor[5] = {1,2,3,4,5};
+    int vetor[7] = {3,5,6,9,7,5,8};
+    //int vetor[5] = {1,2,3,4,5};
     int total = sizeof(vetor)/sizeof(int);
 
     encontrarMaior(vetor, total);
@@ -90,6 +110,7 @@ int main(){
     inverter(vetor, total);
     removerDuplicados(vetor, total);
     verificaOrdem(vetor,total);
+    subArrayMaiorSoma(vetor, total, 4);
 
 
     return 0;
