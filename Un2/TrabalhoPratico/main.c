@@ -19,6 +19,8 @@ void printarMatrizDistancias(int tamanho, double matriz[tamanho][tamanho]) {
 double calculoMenorRota(double matriz[10][10], int tamanho){
     double soma = 0, rota = 10000000;
 
+
+    //incompleto
     for (int i = 0; i < tamanho; i++){
         for (int j = 0; j < tamanho; j++){
             for(int k = 0; k < tamanho; k++){
@@ -68,6 +70,7 @@ int main(){
 
 
     //calcularRota();
+    
 
     
 
