@@ -17,6 +17,7 @@ void printarMatrizDistancias(int tamanho, double matriz[tamanho][tamanho]) {
 }
 
 double calculoMenorRota(double matriz[10][10], int tamanho){
+    
     double soma = 0, rota = 10000000;
 
 
@@ -52,7 +53,8 @@ int main(){
         numRotas = numRotas*(i+1);
     }
 
-   
+   /* Calculo da matriz de distancias: escolhi matrizes pois a partir dos indices da matriz que sei qual distancia está se  eferindo;
+   isto é, de qual cidade pra qual cidade a partir de suas coordenadas*/
     double matrizDistancias[tamanho][tamanho];
     for(i = 0; i < tamanho; i++){
         for (int j = i+1; j < tamanho; j++){
@@ -66,10 +68,12 @@ int main(){
     }
     printarMatrizDistancias(tamanho, matrizDistancias);
 
+    
+    calculoMenorRota(5, matrizDistancias); 
+    
 
 
-
-    //calcularRota();
+    
     
 
     
