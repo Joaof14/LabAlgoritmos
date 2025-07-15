@@ -14,6 +14,7 @@ void printarMatrizDistancias(int tamanho, double matriz[tamanho][tamanho]) {
         printf("\n");
     }
 }
+
 // Adiciona um array para guardar a melhor rota encontrada
 double gerarPermutacoes(int tamanho, int permutacao[tamanho], int usado[tamanho], int nivel, double matriz[tamanho][tamanho], int melhorRota[tamanho + 1], double menorDistancia) {
     if (nivel == tamanho - 1) {
@@ -35,6 +36,8 @@ double gerarPermutacoes(int tamanho, int permutacao[tamanho], int usado[tamanho]
         }
         return menorDistancia;
     }
+
+//gera permutações recursivamente até encontrar a melhor distancia
     for (int i = 1; i < tamanho; i++) {
         if (!usado[i]) {
             usado[i] = 1;
@@ -46,6 +49,7 @@ double gerarPermutacoes(int tamanho, int permutacao[tamanho], int usado[tamanho]
     return menorDistancia;
 }
 
+// calcular menor rota inicializando a menor com um valor absurdo
 double calculoMenorRota(int tamanho, double matriz[tamanho][tamanho], int melhorRota[tamanho + 1]) {
     int permutacao[tamanho - 1];
     int usado[tamanho];
@@ -55,12 +59,15 @@ double calculoMenorRota(int tamanho, double matriz[tamanho][tamanho], int melhor
     return menorDistancia;
 }
 
+
+
 int main(){
     int numRotas = 1;
     int tamanho = 10;
     int cidades[tamanho][2];
     int i;
 
+    //calcular numero de rotas totais e definir valores pra cidades
     for(i = 0; i < tamanho; i++){
         cidades[i][0] = rand() % 100; 
         cidades[i][1] = rand() % 100; 
@@ -68,6 +75,8 @@ int main(){
         numRotas = numRotas*(i+1);
     }
 
+
+    //calcular matriz de distancias
     double matrizDistancias[tamanho][tamanho];
     for(i = 0; i < tamanho; i++){
         for (int j = i+1; j < tamanho; j++){
@@ -78,10 +87,12 @@ int main(){
     }
     printarMatrizDistancias(tamanho, matrizDistancias);
 
+    //
     int melhorRota[tamanho + 1];
     double menorDistancia = calculoMenorRota(tamanho, matrizDistancias, melhorRota);
     printf("\nMenor distância total encontrada: %.2f\n", menorDistancia);
 
+    // printar menor rota
     printf("Menor rota: ");
     for (int i = 0; i <= tamanho; i++) {
         printf("%d ", melhorRota[i]);
